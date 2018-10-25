@@ -164,7 +164,7 @@ class MyApp extends connect(store)(LitElement) {
 
     <!-- Drawer content -->
     <app-drawer .opened="${this._drawerOpened}" .persistent="${this._wideLayout}"
-        @opened-changed="${this._drawerOpenedChanged}">
+        @opened-changed="${this._drawerOpenedChanged}" swipe-open>
       <nav class="drawer-list">
         <a ?selected="${this._page === 'view1'}" href="/view1">View One</a>
         <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
